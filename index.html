@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        span {
+            font-size: 90pt;
+            /* background-color: lightgreen; */
+        }
+
+        p {
+            margin: auto;
+            text-align: center;
+            font-size: 20pt;
+            margin-left: 20px;
+            /* background-color: lightblue; */
+        }
+
+
+        .excellent,
+        .very-good {
+            color: green;
+            font-weight: bold;
+        }
+
+        .good {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .bad {
+            color: red;
+            font-weight: bold;
+        }
+
+        .custom-badge {
+            padding: 15px;
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .emoji {
+            padding: 1rem;
+            font-size: 6rem;
+            transform: scale(.75);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+            transition:
+                text-shadow .2s ease-in-out,
+                transform .2s ease-in-out;
+        }
+
+        .emoji:hover {
+            transform: scale(1) translatey(-20px);
+            text-shadow: 0 20px 20px rgba(0, 0, 0, .3);
+        }
+
+        .emoji--happy:before {
+            content: '🙂';
+            /* background-color: lightblue; */
+        }
+
+        .emoji--happy:hover:before {
+            content: '😃';
+
+        }
+
+        .emoji--sad:before {
+            content: '😕';
+            /* background-color: lightblue; */
+        }
+
+        .emoji--sad:hover:before {
+            content: '☹️ ';
+        }
+
+        .emoji--crying:before {
+            content: '😠';
+            /* background-color: lightcyan; */
+        }
+
+        .emoji--crying:hover:before {
+            content: '😡';
+        }
+
+        .emoji--grimacing:before {
+            content: '😬';
+            /* background-color: lightgreen; */
+        }
+
+        .emoji--grimacing:hover:before {
+            content: '😁';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <span class="badge badge-pill badge-success custom-badge">Overall Experience الخبرة
+                الشاملة</span>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-2 ">
+            <!-- <span class="emoji emoji--crying"></span> -->
+            <img class="emoji emoji--crying" src="images/2.png" alt="">
+            <p class="bad">Bad <br> سيئة</p>
+        </div>
+        <div class="col-md-2">
+            <!-- <span class="emoji emoji--sad"></span> -->
+            <img class="emoji emoji--crying" src="images/3.png" alt="">
+            <p class="good">Good <br> حسن</p>
+        </div>
+        <div class="col-md-2">
+            <img class="emoji emoji--crying" src="images/4.png" alt="">
+            <!-- <span class="emoji emoji--grimacing"></span> -->
+            <p class="very-good">Very Good حسن جدا</p>
+
+        </div>
+        <div class="col-md-2">
+            <!-- <span class="emoji emoji--happy"></span> -->
+            <img class="emoji emoji--crying" src="images/5.png" alt="">
+            <p class="excellent">Excellent ممتاز</p>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $('span').click(function () {
+            swal("Thank you!🙏", "Thank you for your feed back", "success", { timer: 2000 });
+        });
+    </script>
+</body>
+
+</html>
